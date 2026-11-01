@@ -1,0 +1,23 @@
+$ ls -la code-server.tar.gz && sha256sum code-server.tar.gz
+-rw-rw---- 1 root root 231422956 Nov  1 03:08 code-server.tar.gz
+710f749c40a0f3d0ab3be09c0de65314e5c2907cc50646f5fbc0f24c0e8fba2d  code-server.tar.gz
+
+$ ./cs/bin/code-server --version
+[2026-11-01T03:08:55.921Z] info  Wrote default config file to /home/hatch/.config/code-server/config.yaml
+4.144.0 ee31cdbe02c07b3ba718007f221d14c890696c61 with Code 1.144.0
+
+$ ls cs/
+LICENSE
+README.md
+ThirdPartyNotices.txt
+bin
+lib
+node_modules
+npm-shrinkwrap.json
+out
+package.json
+postinstall.sh
+src
+
+$ du -sh cs
+678M	cs

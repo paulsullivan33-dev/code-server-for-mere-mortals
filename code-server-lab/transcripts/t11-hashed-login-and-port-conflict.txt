@@ -1,0 +1,13 @@
+$ curl -s -c cookies2.txt -o /dev/null -w "%{http_code} -> %{redirect_url}" -X POST -d "password=<the lab password>" http://127.0.0.1:18083/login   (plain password against the hashed config)
+302 -> http://127.0.0.1:18083/
+
+$ curl -s -b cookies2.txt "http://127.0.0.1:18083/vscode-remote-resource?path=/home/hatch/workspace/code-server-labwork/workspace/notes.md"
+# Lab notes
+
+A plain Markdown file so the explorer has more than one kind of file to show.
+
+$ timeout 20 ./cs/bin/code-server --config ./config.yaml --user-data-dir ./user-data2 --extensions-dir ./extensions ./workspace   (second instance, same port)
+[2026-11-01T03:22:27.245Z] info  code-server 4.144.0 ee31cdbe02c07b3ba718007f221d14c890696c61
+[2026-11-01T03:22:27.334Z] info  Using user-data-dir /home/hatch/workspace/code-server-labwork/user-data2
+[2026-11-01T03:22:27.382Z] error listen EADDRINUSE: address already in use 127.0.0.1:18083
+(exit 1)

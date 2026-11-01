@@ -1,0 +1,21 @@
+$ cat config.yaml   (the lab config, kept inside the lab folder)
+bind-addr: 127.0.0.1:18083
+auth: password
+password: lab-fixture-password-42
+cert: false
+disable-telemetry: true
+
+$ ls -la workspace/
+total 8
+drwxrwx--- 1 root root  32 Nov  1 03:09 .
+drwxrwx--- 1 root root 140 Nov  1 03:09 ..
+-rw-rw---- 1 root root 149 Nov  1 03:09 hello.py
+-rw-rw---- 1 root root  91 Nov  1 03:09 notes.md
+
+$ cat workspace/hello.py
+# A stock fixture program for the lab workspace.
+def greet(name):
+    return f"Hello, {name}!"
+
+if __name__ == "__main__":
+    print(greet("world"))

@@ -1,0 +1,18 @@
+$ curl -s -b cookies.txt http://127.0.0.1:18083/ -o workbench.html; wc -c workbench.html
+83 workbench.html
+
+$ grep -o "<title>[^<]*</title>" workbench.html
+
+$ grep -o "code-server-labwork/workspace" workbench.html | head -1   (the folder the server opened)
+code-server-labwork/workspace
+
+$ curl -s -b cookies.txt "http://127.0.0.1:18083/vscode-remote-resource?path=/home/hatch/workspace/code-server-labwork/workspace/hello.py"
+# A stock fixture program for the lab workspace.
+def greet(name):
+    return f"Hello, {name}!"
+
+if __name__ == "__main__":
+    print(greet("world"))
+
+$ curl -s -o /dev/null -w "%{http_code}" "http://127.0.0.1:18083/vscode-remote-resource?path=/home/hatch/workspace/code-server-labwork/workspace/hello.py"   (same file request, no cookie)
+401

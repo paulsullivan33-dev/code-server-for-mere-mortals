@@ -1,0 +1,28 @@
+site_name: code-server for Mere Mortals
+site_description: VS Code running on a server and used from a browser. Installing code-server from the release tarball, signing in with its password, opening a folder, reading files through its web surface, adding extensions from the command line, and keeping the door locked, with the limits stated plainly.
+site_url: https://paulsullivan33-dev.github.io/code-server-for-mere-mortals/
+copyright: 'Part of <a href="https://paulsullivan33-dev.github.io/mere-mortals/">For Mere Mortals</a> · Text <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, code MIT'
+
+# Guides live at the repo root (nice for GitHub browsing).
+# The deploy workflow copies them into docs/ before building.
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - What code-server Is: what-code-server-is.md
+  - The Moving Parts: the-moving-parts.md
+  - Installing code-server: installing-code-server.md
+  - Your First Login: your-first-login.md
+  - Opening a Folder: opening-a-folder.md
+  - The Editor Itself: the-editor-itself.md
+  - Extensions: extensions.md
+  - Passwords and Authentication: passwords-and-authentication.md
+  - Configuration: configuration.md
+  - Putting It on a Network: putting-it-on-a-network.md
+  - Recipes: recipes.md
+  - The Neighbours: the-neighbours.md
+  - Limits: limits.md
+  - Troubleshooting: troubleshooting.md
+  - Glossary: glossary.md
+  - Writing Criteria: criteria.md

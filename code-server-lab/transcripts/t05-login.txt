@@ -1,0 +1,11 @@
+$ curl -s -o /dev/null -w "%{http_code}" -X POST -d "password=wrong-password" http://127.0.0.1:18083/login   (wrong password)
+200
+
+$ curl -s -c cookies.txt -o /dev/null -w "%{http_code} -> %{redirect_url}" -X POST -d "password=<the lab password>" http://127.0.0.1:18083/login
+302 -> http://127.0.0.1:18083/
+
+$ grep code-server cookies.txt | cut -c1-80
+127.0.0.1	FALSE	/	FALSE	0	code-server-session	%24argon2id%24v%3D19%24m%3D65536%2
+
+$ curl -s -b cookies.txt http://127.0.0.1:18083/healthz
+{"status":"alive","lastHeartbeat":1793502559547}

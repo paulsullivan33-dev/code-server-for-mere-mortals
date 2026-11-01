@@ -1,0 +1,5 @@
+bind-addr: 127.0.0.1:18083
+auth: password
+password: lab-fixture-password-42
+cert: false
+disable-telemetry: true

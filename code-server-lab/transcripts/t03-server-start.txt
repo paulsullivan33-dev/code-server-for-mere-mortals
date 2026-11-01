@@ -1,0 +1,8 @@
+[2026-11-01T03:09:04.422Z] info  code-server 4.144.0 ee31cdbe02c07b3ba718007f221d14c890696c61
+[2026-11-01T03:09:04.447Z] info  Using user-data-dir /home/hatch/workspace/code-server-labwork/user-data
+[2026-11-01T03:09:04.464Z] info  Using config file ./config.yaml
+[2026-11-01T03:09:04.464Z] info  HTTP server listening on http://127.0.0.1:18083/
+[2026-11-01T03:09:04.464Z] info    - Authentication is enabled
+[2026-11-01T03:09:04.464Z] info      - Using password from ./config.yaml
+[2026-11-01T03:09:04.464Z] info    - Not serving HTTPS
+[2026-11-01T03:09:04.464Z] info  Session server listening on /home/hatch/workspace/code-server-labwork/user-data/code-server-ipc.sock

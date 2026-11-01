@@ -1,0 +1,25 @@
+$ ./cs/bin/code-server --user-data-dir ./user-data --extensions-dir ./extensions --install-extension editorconfig.editorconfig
+Installing extensions...
+(node:83006) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Error while installing extensions: Client network socket disconnected before secure TLS connection was established
+Client network socket disconnected before secure TLS connection was established
+(exit 1)
+
+$ ./cs/bin/code-server --user-data-dir ./user-data --extensions-dir ./extensions --list-extensions --show-versions
+
+$ ls extensions/
+extensions.json
+$ timeout 150 ./cs/bin/code-server --user-data-dir ./user-data --extensions-dir ./extensions --install-extension editorconfig.editorconfig   (second attempt)
+Installing extensions...
+(node:86209) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Installing extension 'editorconfig.editorconfig'...
+Extension 'editorconfig.editorconfig' v0.18.2 was successfully installed.
+(exit 0)
+$ ./cs/bin/code-server --user-data-dir ./user-data --extensions-dir ./extensions --list-extensions --show-versions
+editorconfig.editorconfig@0.18.2
+
+$ ls extensions/
+editorconfig.editorconfig-0.18.2-universal
+extensions.json

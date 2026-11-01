@@ -1,0 +1,12 @@
+$ curl -s -o /dev/null -w "%{http_code} -> %{redirect_url}" http://127.0.0.1:18083/   (no cookie, no login)
+302 -> http://127.0.0.1:18083/?folder=/home/hatch/workspace/code-server-labwork/workspace
+
+$ curl -s "http://127.0.0.1:18083/vscode-remote-resource?path=/home/hatch/workspace/code-server-labwork/workspace/hello.py" | head -2   (file fetch, still no cookie)
+# A stock fixture program for the lab workspace.
+def greet(name):
+
+$ sed "s/^password:.*/password: <the generated password, not printed>/" ~/.config/code-server/config.yaml   (the default config the first --version run wrote)
+bind-addr: 127.0.0.1:8080
+auth: password
+password: <the generated password, not printed>
+cert: false

@@ -1,0 +1,13 @@
+$ curl -s -b cookies.txt -L http://127.0.0.1:18083/ -o workbench2.html -w "final %{http_code}, %{size_download} bytes"
+final 200, 5842 bytes
+
+$ grep -o "workbench" workbench2.html | wc -l
+10
+
+$ curl -s -b cookies.txt -X POST --data-binary "written over http" "http://127.0.0.1:18083/vscode-remote-resource?path=/home/hatch/workspace/code-server-labwork/workspace/from-http.txt" -w "%{http_code}"   (try to create a file the same way)
+Unsupported method POST
+405
+
+$ ls workspace/   (did anything appear?)
+hello.py
+notes.md

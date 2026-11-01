@@ -1,0 +1,11 @@
+$ curl -s http://127.0.0.1:18083/healthz
+{"status":"expired","lastHeartbeat":0}
+
+$ curl -s -o /dev/null -w "%{http_code} -> %{redirect_url}" http://127.0.0.1:18083/
+302 -> http://127.0.0.1:18083/login
+
+$ curl -s http://127.0.0.1:18083/login | grep -o "<title>[^<]*</title>"
+<title>code-server login</title>
+
+$ curl -s http://127.0.0.1:18083/login | grep -o "Welcome to code-server" | head -1
+Welcome to code-server

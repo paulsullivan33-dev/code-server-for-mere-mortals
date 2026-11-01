@@ -1,0 +1,19 @@
+[2026-11-01T03:22:38.574Z] info  code-server 4.144.0 ee31cdbe02c07b3ba718007f221d14c890696c61
+[2026-11-01T03:22:38.578Z] info  Using user-data-dir /home/hatch/workspace/code-server-labwork/user-data
+[2026-11-01T03:22:38.638Z] info  Using config file ./config-none.yaml
+[2026-11-01T03:22:38.638Z] info  HTTP server listening on http://127.0.0.1:18083/
+[2026-11-01T03:22:38.638Z] info    - Authentication is disabled
+[2026-11-01T03:22:38.638Z] info    - Not serving HTTPS
+[2026-11-01T03:22:38.639Z] info  Session server listening on /home/hatch/workspace/code-server-labwork/user-data/code-server-ipc.sock
+[03:22:41] 
+
+
+
+
+[03:22:42] StorageMainService: creating application shared storage
+[reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[03:22:42] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: /tmp/vscode-ipc-37e96ff0-0c0b-4e54-b3fb-faf77aadf353.sock)
+[03:22:42] Extension host agent started.
+[03:22:42] [shared storage] Creating shared storage database at '/home/hatch/.vscode-oss-shared/sharedStorage/state.vscdb' (wasCreated: false)
+[03:22:42] [shared storage] Initializing fallback application storage (path: /home/hatch/workspace/code-server-labwork/user-data/User/globalStorage/state.vscdb)
+[03:22:42] [shared storage] Fallback application storage initialized with 4 items
